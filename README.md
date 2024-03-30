@@ -1,4 +1,4 @@
-# teste
-Exercícios de html e css
+# Estudos
+Exercícios em html e css
 
-<a href="https://leeticia-araaujo.github.io/estudos/html-css/desafios/10-mini-projeto/" target="_blank">Abrir Mini Projeto</a>
+<a href="https://leeticia-araaujo.github.io/estudos/html-css/desafios/10-mini-projeto/" target="_blank">Acesse o Mini Projeto Android</a>
