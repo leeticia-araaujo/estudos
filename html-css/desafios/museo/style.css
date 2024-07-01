@@ -20,9 +20,10 @@ span{
     color: var(--cor);
 }
 
+/*Começo do cabeçalho*/
 header{
     text-align: center;
-    background-color: #e0a44967;
+    background-color: #e8b05d67;
     min-height: 350px;
     min-width: 100px;
 }
@@ -34,7 +35,7 @@ header > h1{
     max-width: 300px;
 }
 
-nav{
+nav{ /*barra de navegação*/
     padding: 30px 5px 10px 5px;
     margin-bottom: 5px;
     font-family: "Montserrat", sans-serif;
@@ -63,18 +64,30 @@ nav > img{
     display: inline-block;
 }
 
-.central{
+#central{ /*Nome do museu*/
     text-align: justify;
     font-weight: 500;
     margin-left: 70px;
 }
 
-.central:hover{
+#central:hover{
     text-decoration: none;
 }
 
 #entrar{
     padding-right: 5px;
+}
+
+#entrar:hover{
+    color: #E0A449;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#fav:hover{
+    color: #E0A449;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 #registro{
@@ -99,15 +112,113 @@ header > input{
     min-width: 400px;
     background-image: url(img/lupa.png);
     background-repeat: no-repeat;
-    background-position: calc(100% - 20px) center;
+    background-position: calc(100% - 15px) center;
 }
 
-footer{
+input:not(:placeholder-shown) {
+    border: none;
+    outline: none;
+    background-image: none;
+  }
+
+input:placeholder-shown {
+    border: none;
+    outline: none;
+  }
+
+/*Fim do cabeçalho*/
+
+/*Começo do corpo*/
+main{
+    min-width: 100px;
+    max-width: 1300px;
+    padding: 15px;
+    margin: auto;
+}
+
+/*Mais visitados*/
+section{
     padding: 10px;
+    margin-bottom: 10px;
+}
+
+section > h1{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 25px;
+}
+
+article{
+    background-color: rgba(255, 255, 255, 0.489);
+    max-width: 250px;
+    min-width: 350px;
+    height: 380px;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 5px 25px 25px 25px;
+    box-shadow: 1px 1px 15px rgba(101, 101, 101, 0.167);
+}
+
+article > img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    margin: 0px;
+    height: 77%;
+}
+
+article > p{
+    font-size: 13px;
+    line-height: 1.7em;
+    padding: 5px 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*Conteúdo extra*/
+aside{
+    padding: 10px;
+}
+
+aside > h1{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 25px;
+}
+
+aside > div{
+    background-color: white;
+    max-width: 250px;
+    min-width: 380px;
+    height: 60px;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 5px 5px 10px 5px;
+}
+
+div > p{
+    font-size: 12px;
+    font-weight: normal;
+    display: inline-block;
+    line-height: 1.7em;
+}
+
+.imgd{ /*Imagens do conteúdo extra*/
+    height: 60px; 
+    width: 60px;
+    float: left;
+    margin-left: 0px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+/*Fim do corpo*/
+
+/*Começo do rodapé*/
+footer{
+    padding: 15px;
     margin: auto;
     font-size: 0.8em;
     min-width: 100px;
-    max-width: 100em;
+    max-width: 1300px;
 }
 
 footer > img{
@@ -128,8 +239,29 @@ footer > p{
     padding: 10px;
 }
 
+footer > hr{
+    margin: 25px 0px 15px 0px;
+}
+
 #ultimop{
     position: relative;
     left: 80%;
 }
 
+#topo{
+    position: relative;
+    left: 83%;
+    color: black;
+}
+
+#topo:hover{
+    color: #E0A449;
+}
+
+#museufooter{
+    text-align: justify;
+    font-weight: 400;
+    color: black;
+    font-size: 1.1em;
+}
+/*Fim do rodapé*/
